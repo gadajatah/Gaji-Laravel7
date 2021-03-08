@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/positions', 'JabController@index');
+// Route::get('/datajab', 'JabController@show');

@@ -27,7 +27,7 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="container">
+        <div class="" role="main">
           @yield('content')
         </div>
         
