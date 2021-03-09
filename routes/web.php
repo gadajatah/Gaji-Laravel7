@@ -22,5 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/positions', 'JabController@index');
-// Route::get('/datajab', 'JabController@show');
+Route::get('positions', 'JabController@index');
+Route::get('positions/create', 'JabController@create');
+Route::post('positions/store', 'JabController@store');
+Route::get('positions/{jab:jabatan}', 'JabController@show');

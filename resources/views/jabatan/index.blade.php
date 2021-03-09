@@ -8,7 +8,7 @@
               <div class="x_title">
                 <h2> Data Seluruh Jabatan </h2>
                 <ul class="nav navbar-right panel_toolbox">
-                  <li><a href="#" class="btn btn-success"><i class="fas fa-plus"></i>Tambah</a></li>
+                  <li><a href="/positions/create" class="btn btn-success"><i class="fas fa-plus"></i>Tambah</a></li>
                 </ul>
                 <div class="clearfix"></div>
               </div>
@@ -31,7 +31,7 @@
                       <td> {{ $jab->jabatan }} </td>
                       <td> {{ $jab->created_at }} </td>
                       <td align="center">
-                        <a href="#" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                        <a href="/positions/{{ $jab->jabatan }}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
                         <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
                         <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
                       </td>
