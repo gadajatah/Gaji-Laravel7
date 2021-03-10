@@ -25,21 +25,21 @@
                       <th>Action</th>
                   </thead>
                   <tbody>
-                    @foreach ($jabatan as $jab)
+                    @foreach ($position as $jab)
                     <tr>
                       <td> {{ $jab->id }}</td>
                       <td> {{ $jab->jabatan }} </td>
                       <td> {{ $jab->created_at }} </td>
                       <td align="center">
                         <a href="/positions/{{ $jab->jabatan }}" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
+                        <a href="/positions/{{ $jab->jabatan }}/edit" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i></a>
                         <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
                       </td>
                     </tr>
                     @endforeach 
                   </tbody>
                 </table>
-                {{ $jabatan->links() }}
+                {{ $position->links() }}
               </div>
               </div>
           </div>

@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Data Jabatan')
+@section('title', 'Detail Jabatan')
 @section('content')
 
 <div class="right_col">
@@ -7,7 +7,7 @@
       <div class="col-md-12 col-sm-12 ">
         <div class="x_panel">
           <div class="x_title">
-            <h2>Ini Adalah Datamu</h2>
+            <h2> Jabatan Ini Adalah  {{ $position->jabatan }}</h2>
           </div>
         </div>
     </div>

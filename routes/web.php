@@ -24,5 +24,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('positions', 'JabController@index');
 Route::get('positions/create', 'JabController@create');
+Route::get('positions/{position:jabatan}/edit', 'JabController@edit');
+Route::patch('positions/{postion:jabatan}/edit', 'JabController@update');
+
+
 Route::post('positions/store', 'JabController@store');
-Route::get('positions/{jab:jabatan}', 'JabController@show');
+Route::get('positions/{position:jabatan}', 'JabController@show');
