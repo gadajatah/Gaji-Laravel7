@@ -32,7 +32,7 @@ class JabController extends Controller
             'jabatan' => 'required',
         ]);
         Position::create($attr);
-
+            
         return redirect()->to('positions');
     }
 
@@ -45,14 +45,14 @@ class JabController extends Controller
 
     public function update(Position $position)
     {
-    
-        $attr = request()->validate([
-            'jabatan' => 'required',
-        ]);
+        dd($position);
+        // $attr = request()->validate([
+        //     'jabatan' => 'required',
+        // ]);
 
-        $position->update($attr);
+        // $position->update($attr);
         
-        return redirect()->to('positions');
+        // return redirect()->to('positions');
     }
 
 }
