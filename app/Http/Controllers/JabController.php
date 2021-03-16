@@ -45,14 +45,20 @@ class JabController extends Controller
 
     public function update(Position $position)
     {
-        dd($position);
-        // $attr = request()->validate([
-        //     'jabatan' => 'required',
-        // ]);
-
-        // $position->update($attr);
         
-        // return redirect()->to('positions');
+        $attr = request()->validate([
+            'jabatan' => 'required',
+        ]);
+
+        $position->update($attr);
+        
+        return redirect()->to('positions');
+    }
+    public function destroy(Position $position)
+    {
+        $position->delete();
+
+        return redirect()->to('positions');
     }
 
 }
