@@ -28,7 +28,7 @@
         <li><a><i class="fa fa-edit"></i> Data <span class="fa fa-chevron-down"></span></a>
           <ul class="nav child_menu">
             <li><a href="/positions"> Data Jabatan </a></li>
-            <li><a href="#"> Data Karyawan </a></li>
+            <li><a href="/workers"> Data Karyawan </a></li>
           </ul>
         </li>
         <li><a><i class="fa fa-desktop"></i> Absensi <span class="fa fa-chevron-down"></span></a>

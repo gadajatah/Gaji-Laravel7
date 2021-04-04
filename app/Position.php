@@ -8,4 +8,10 @@ class Position extends Model
 {
     protected $fillable = ['jabatan'];
     // protected $guarded = [];
+
+
+    public function workers()
+    {
+        return $this->hasMany(Worker::class);
+    }
 }

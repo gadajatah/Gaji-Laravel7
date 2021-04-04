@@ -32,3 +32,6 @@ Route::delete('positions/{position:jabatan}/delete', 'JabController@destroy');
 
 Route::post('positions/store', 'JabController@store');
 Route::get('positions/{position:jabatan}', 'JabController@show');
+
+
+Route::get('workers', 'KarController@index');

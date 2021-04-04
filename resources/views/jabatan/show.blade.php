@@ -14,7 +14,7 @@
             <form action="/positions/{{ $position->jabatan }}/delete" method="post">
               @csrf
               @method('delete')
-              <button type="submit" class="btn btn-danger">Hapus</button>
+              <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
             </form>
         </div>
 
